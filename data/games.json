@@ -2,19 +2,33 @@
     "games": [
         {
             "id": 1,
-            "name": "",
+            "name": "1st",
             "date": "2021-01-01",
             "description": "",
             "players": [
                 {
-                    "name": "",
-                    "score": 0,
-                    "winner": true
+                    "name": "Alex",
+                    "score": 1750,
+                    "winner": true,
+                    "items": ["briefcase"]
                 },
                 {
-                    "name": "",
-                    "score": 0,
-                    "winner": false
+                    "name": "Sam",
+                    "score": 1250,
+                    "winner": false,
+                    "items": ["gem", "gem"]
+                },
+                {
+                    "name": "Corbs",
+                    "score": 1200,
+                    "winner": false,
+                    "items": ["250", "250", "250", "450"]
+                },
+                {
+                    "name": "Jonathan",
+                    "score": 350,
+                    "winner": false,
+                    "items": ["350"]
                 }
             ]
         }

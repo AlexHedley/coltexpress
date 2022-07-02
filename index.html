@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Colt Express">
+    <meta name="keywords" content="colt, express">
     <meta name="author" content="Alex Hedley">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -32,7 +32,7 @@
 
         <section class="jumbotron title-container text-center">
             <div>
-                <h1></h1>
+                <h1>Colt Express</h1>
 
                 <div class="row justify-content-md-center">
                     <div class="col-lg-8">
@@ -51,7 +51,7 @@
         </button>
         <div class="collapse" id="image">
             <div class="row justify-content-md-center">
-                <img src="images/.jpeg" width="500px" alt="Game" />
+                <img src="images/colt.jpg" width="500px" alt="Game" />
             </div>
         </div>
 
@@ -84,7 +84,7 @@
 
                 <br />
 
-                <div class="row justify-content-md-center">
+                <!-- <div class="row justify-content-md-center">
                     <div class="">
 
                         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -113,7 +113,7 @@
                     </div>
                 </div>
 
-                <br />
+                <br /> -->
                 
                 <div class="row">
                     <div class="col">
@@ -148,7 +148,13 @@
                                 <p class="card-text">{{game.description}}</p>
                                 <p class="card-text">{{game.date | date:'d MMM yyyy'}}</p>
                                 <div ng-repeat="player in game.players">
-                                    <p>{{player.name}} <span ng-if="player.winner"><strong>Winner</strong></span></p>
+                                    <p>
+                                        {{player.name}} <span ng-if="player.winner"><strong>Winner</strong></span>
+                                        <span class="badge badge-secondary">{{player.score}}</span>
+                                        <span ng-repeat="item in player.items track by $index">
+                                            <span class="badge badge-warning">{{item}}</span>
+                                        </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
